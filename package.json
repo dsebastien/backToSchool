@@ -1,0 +1,22 @@
+{
+  "name": "back-to-school",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest",
+    "tsc": "tsc"
+  },
+  "author": "dSebastien <seb@dsebastien.net> (https://www.dsebastien.net)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "23.3.5",
+    "jest": "23.6.0",
+    "jest-each": "23.6.0",
+    "ts-jest": "23.10.4",
+    "typescript": "3.1.1"
+  },
+  "dependencies": {
+    "@types/jest-each": "0.3.2",
+    "@types/node": "10.12.0"
+  }
+}
