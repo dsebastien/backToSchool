@@ -1,5 +1,6 @@
 /**
  * Count the occurrences of the given substring in the whole string
+ * Reference: https://stackoverflow.com/questions/4009756/how-to-count-string-occurrence-in-string
  * @param str the string to search in
  * @param subString the substring to look for
  * @param allowOverlapping whether to allow overlapping or not
