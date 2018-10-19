@@ -7,6 +7,7 @@ const rl = readLine.createInterface({
 });
 
 rl.question('Give me a string to evaluate: ', (question) => {
+	rl.close();
 	const answer = shortestPeriod(question);
 	console.log(`The shortest period I could find within ${question} is "${answer}"`);
 });
