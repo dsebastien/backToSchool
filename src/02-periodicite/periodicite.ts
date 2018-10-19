@@ -38,18 +38,3 @@ export function shortestPeriod(input: string): string {
 		}
 	}
 }
-
-// TODO investigate later if performance improvements are needed
-// Two-Way string matching algorithm: http://www-igm.univ-mlv.fr/~lecroq/string/node26.html
-// --> guarantees linear complexity with constant space
-// can be combined with Boyer-Moore string search algorithm: http://en.wikipedia.org/wiki/Boyer-Moore_string_search_algorithm
-// --> tradeoff with memory requirements: https://stackoverflow.com/questions/19543547/why-does-string-indexof-not-use-kmp
-//
-// The occurrences counting can also be made faster: https://jsperf.com/string-ocurrence-split-vs-match/2
-// Other interesting links:
-// https://reponroy.wordpress.com/2015/04/29/kmp-minimum-length-of-a-repeated-string/
-// http://git.savannah.gnu.org/gitweb/?p=gnulib.git;a=blob;f=lib/memmem.c;h=622a034;hb=9d8d6cd
-// https://www.programering.com/a/MDO3QTNwATQ.html
-// https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/
-// https://stackoverflow.com/questions/31865174/implementation-of-z-algorithm
-// https://ivanyu.me/blog/2013/10/15/z-algorithm/

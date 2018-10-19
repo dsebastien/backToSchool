@@ -11,7 +11,8 @@ const testDataPoints = [
 	["ababab", "(ab)3"],
 	["aaaaa", "a5"],
 	["abcdabcd", "(abcd)2"],
-	["abcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijk", "(abcdefghijk)6"]
+	["abcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijk", "(abcdefghijk)6"],
+	["abcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijkabcdefghijk", "(abcdefghijk)30"]
 ];
 
 describe('shortestPeriod', () => {
@@ -23,10 +24,8 @@ describe('shortestPeriod', () => {
 			const endTime = new Date();
 			const duration = endTime.getTime() - startTime.getTime();
 
-			console.log(`Duration: ${duration}ms`);
-
 			expect(output).toBe(expected); // correctness
-			expect(duration).toBeLessThanOrEqual(100); // time cost
+			expect(duration).toBeLessThanOrEqual(100); // time cost threshold
         },
     );
 });
