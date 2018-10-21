@@ -10,6 +10,10 @@ import { containsRepetition, countOccurrences } from './string-utils';
  * @returns the shortest period found in the input string
  */
 export function shortestPeriod(input: string): string {
+	if(input == null) {
+		throw new Error("The input string is required")
+	}
+	
 	if(!containsRepetition(input)) {
 		return `(${input})1`; // in this case there's no repeating pattern, the whole string is the period
 	}
